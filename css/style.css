@@ -1,0 +1,194 @@
+/* import font */
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* other css file imports */
+@import url("sections/header.css");
+@import url("sections/hero.css");
+@import url("sections/services.css");
+@import url("sections/works.css");
+@import url("sections/team.css");
+@import url("sections/client.css");
+@import url("sections/footer.css");
+
+/* CSS variables for reusability */
+:root {
+	--poppins: "Poppins", sans-serif;
+	--font-logo: "Heebo", sans-serif;
+
+	--color-blue: #2d9cdb;
+	--color-green: #27ae60;
+	--color-red: #eb5757;
+	--color-darkblue: #100e1d;
+
+	--gray-1: #333;
+	--gray-2: #4f4f4f;
+	--gray-3: #828282;
+	--gray-4: #e0e0e0;
+	--gray-5: #f2f2f2;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0 auto;
+
+	font-family: var(--poppins);
+}
+
+.content-wrapper {
+	max-width: 1336px;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.services {
+	padding: 0px 123px 200px 121px;
+}
+
+@media screen and (max-width: 1336px) {
+	header,
+	.hero,
+	.services,
+	.works,
+	.team,
+	.client,
+	.footer {
+		padding-left: 80px;
+		padding-right: 80px;
+	}
+}
+
+@media screen and (max-width: 1085px) {
+	header,
+	.hero,
+	.services,
+	.works,
+	.team,
+	.client,
+	.footer {
+		padding-left: 45px;
+		padding-right: 45px;
+	}
+}
+
+/* START : header media queries */
+@media screen and (max-width: 900px) {
+	.header__menu {
+		display: none;
+	}
+
+	.header__menu-mobile {
+		display: flex;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	header {
+		padding: 0px 12px;
+	}
+}
+/* END: header media queries */
+
+/* START : hero media queries */
+@media screen and (max-width: 1080px) {
+	.hero {
+		gap: 22px;
+	}
+	.hero-content {
+		max-width: 475px;
+		width: 100%;
+
+		margin-left: 0px;
+		align-self: center;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.hero-content {
+		max-width: 291px;
+		width: 100%;
+
+		margin-left: 0px;
+	}
+}
+/* END: hero media queries */
+
+/* START : services media queries */
+@media screen and (max-width: 920px) {
+	.services-topic {
+		flex-direction: column;
+	}
+
+	.services__topic-item {
+		align-self: center;
+	}
+}
+
+/* END: services media queries */
+
+/* START : works media queries */
+@media screen and (max-width: 700px) {
+	.works__gallery {
+		grid-template-columns: 1fr;
+	}
+
+	.works__gallery article:nth-child(odd) {
+		margin-top: 0px;
+	}
+	.works__gallery article:first-child {
+		margin-top: 40px;
+	}
+	.works a {
+		align-self: start;
+		margin-top: 35px;
+	}
+}
+
+/* END: works media queries */
+
+/* START : team media queries */
+@media screen and (max-width: 1010px) {
+	.team {
+		flex-direction: column;
+		gap: 40px;
+		align-items: start;
+	}
+
+	.team__gallery {
+		align-self: center;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.team {
+		padding-left: 10px;
+		padding-right: 12px;
+	}
+}
+@media screen and (max-width: 550px) {
+	.client {
+		padding-left: 10px;
+		padding-right: 12px;
+	}
+}
+
+/* END: team media queries */
+
+/* START : team media queries */
+@media screen and (max-width: 670px) {
+	.footer__atas {
+		flex-direction: column;
+		gap: 60px;
+	}
+}
+
+/* END: team media queries */

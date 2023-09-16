@@ -1,0 +1,82 @@
+.works {
+	display: flex;
+	flex-direction: column;
+	padding: 0px 123px 200px 121px;
+}
+.works h2 {
+	color: var(--Gray-1, #333);
+	font-family: Poppins;
+	font-size: clamp(24px, 3.5vw, 36px);
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.works img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+
+	transform: scale(1);
+	transition: all 0.3s;
+}
+
+.works__gallery-item-img {
+	position: relative;
+	overflow: hidden;
+	border-radius: 24px;
+}
+
+.works__gallery-item-img:hover img {
+	transform: scale(1.1);
+}
+
+.works__gallery {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 27px; /* jarak antar gambar */
+}
+
+.works__gallery p {
+	color: var(--Gray-3, #828282);
+	font-family: Poppins;
+	font-size: clamp(12px, 1vw, 14px);
+	font-style: normal;
+	font-weight: 300;
+	line-height: normal;
+
+	margin-top: 20px;
+}
+
+.works__gallery h5 {
+	color: var(--Gray-1, #333);
+	font-family: Poppins;
+	font-size: clamp(18px, 2.5vw, 24px);
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.works__gallery article:nth-child(odd) {
+	margin-top: 180px;
+}
+
+.works a {
+	align-self: end;
+	display: flex;
+	align-items: center;
+	gap: 13px;
+
+	color: #2d9cdb;
+	font-family: Poppins;
+	font-size: clamp(18px, 1.5vw, 24px);
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+
+	margin-top: -35px;
+}
+
+.works a:hover {
+	border-bottom: 1px solid #2d9cdb;
+}
